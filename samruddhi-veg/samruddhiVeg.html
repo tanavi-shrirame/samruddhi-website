@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samruddhi Pure Veg</title>
+  <link rel="shortcut icon" href="./favicon_io (1)samlogo1/android-chrome-192x192.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav h1 {
+      color: white;
+      font-size: 28px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+    nav ul li {
+      color: white;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .section {
+      display: none;
+      padding: 50px 20px;
+    }
+    .active {
+      display: block;
+    }
+    .hero {
+      height: 100vh;
+      background-image: url(https://www.dutchsportland.com/wp-content/uploads/2012/04/background3-1.jpg);
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      text-shadow: 2px 2px 8px black;
+    }
+    .hero h2 {
+      font-size: 24px;
+      margin: 10px 0;
+      text-shadow: 1px 1px 4px black;
+    }
+    .hero a.button {
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+    .menu, .about, #contact {
+      background-color: #f9f9f9;
+      text-align: center;
+      
+    }
+    .parent{
+       display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 30px;
+    }
+   .box1{
+      height: 380px;
+      width: 300px;
+      border: 1px solid;
+      background-image: url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqzTTy5su65UO56OgZYuBxXEcEMlD7-nHET5tGJCNZN_4yQQGk7o-p02ivOJKzciyHUrAW1Jq5mPTTcLhWc9A7Ee_BTovXaducQMdSMyow_25HrWgFe9_eBpLKahGvxioFMcP8=s1360-w1360-h1020-rw);
+      background-size: cover;
+      color: white;
+      border-radius: 10px;
+      border: 0px;
+      box-shadow: grey;
+    }
+    .box2{
+      height: 380px;
+      width: 300px;
+      border: 1px solid;
+      background-image: url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4npNOrPTm7DQf0tk1MFUIJqZRAMuct5W7LvZyH20V2aSi26pfdRtY1AWVGum8g7ckbj17MbGPufOf51c4y5ZqXZt4PHFwCOZxQvMBFWdIWW7c7ngaDxjyKMGn_x6LTt6MOtqmE1O=s1360-w1360-h1020-rw);
+      background-size: cover;
+      color: white;
+      border-radius: 10px;
+      border: 0px;
+      box-shadow: grey;
+    }
+    .box3{
+      height: 380px;
+      width: 300px;
+      border: 1px solid;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0w429dKeZLBR0TSedSQKkFx25Y_kxcfY4bw&s);
+      background-size: cover;
+      color: white;
+      border-radius: 10px;
+      border: 0px;
+      box-shadow: grey;
+    }
+    .box4{
+      height: 380px;
+      width: 300px;
+      border: 1px solid;
+      background-image: url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4no9ZsnCyiXL6aSUhJdEfr3m3DNi-TrgDq41cZVUvt9Y86fEk-rzsNQGyezk9AnAnknNrDggr9OROpxekuFnhZO2T5ZezijL-EuK58Yz145J3hy92xkBQ_jDfuHvZCE_XEhog_3sNA=s1360-w1360-h1020-rw);
+      background-size: cover;
+      color: white;
+      border-radius: 10px;
+      border: 0px;
+      box-shadow: grey;
+      
+    }
+    .box5{
+      height: 380px;
+      width: 300px;
+      border: 1px solid;
+      background-image: url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4npQkLWQ-KoLrYaY8QHO_LXBfi434DWTAPUHNKrgwLF3lylv_40o2RlzOabDcRhIn7E1sjqJjKeXro4DWWuMF0eFT6PE3Nrz16Zh-yrL2_zv1AulPqNHDEJgKhhT-GXA5M1w6hsYKw=s1360-w1360-h1020-rw);
+      background-size: cover;
+      color: white;
+      border-radius: 10px;
+      border: 0px;
+      box-shadow: grey;
+    }
+    .box6, .box7, .box8 {
+  height: 380px;
+  width: 300px;
+  border: 1px solid;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.box6 {
+  background-image: url(https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg);
+}
+.box7 {
+  background-image: url(https://shwetainthekitchen.com/wp-content/uploads/2022/01/Idli-Sambar.jpg);
+}
+.box8 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwFoNVxfdIbWINbvG25qgwfZwzPY2BwbGfBg&s);
+}
+
+    .about .box {
+      background: #fff3e0;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+    .about .box p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.about-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+    #contact h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    #contact p {
+      font-size: 18px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      top: 500px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Samruddhi Pure Veg</h1>
+    <ul>
+      <li onclick="showPage('home')">Home</li>
+      <li onclick="showPage('menu')">Menu</li>
+      <li onclick="showPage('about')">About</li>
+      <li onclick="showPage('contact')">Contact</li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section active">
+    <div class="hero">
+      <h1>Welcome to Samruddhi Pure Veg</h1>
+      <h2>Pure Veg Taste from Jeur, Tal. Karmala, Dist. Solapur</h2>
+   
+    </div>
+  </section>
+<section id="menu" class="section menu">
+  <h2>Our Menu</h2>
+   <div class="parent">
+  <div class="box1">Paneer Pasanda</div>
+    <div class="box2">Mashroom fry</div>
+      <div class="box3">Pav Bhaji</div>
+      <div class="box4">Dal Rice</div>
+      <div class="box5">Machurian</div>
+       <div class="box6">Masala Dosa</div>
+      <div class="box7">Idli Sambar</div>
+      <div class="box8">Veg Biryani</div>
+  </div>
+  </section>
+
+ <section id="about" class="section about">
+  <h2>About Us</h2>
+  <div class="box">
+    <p><strong>Samruddhi Pure Veg</strong> is a family-run restaurant rooted in the heart of <strong>Jeur, Tal. Karmala, Dist. Solapur</strong>. Since our establishment, we have become a beloved destination for locals and visitors who crave authentic, home-style vegetarian cuisine.</p>
+
+    <p>We take pride in offering a wide variety of fresh and flavorful vegetarian dishes that reflect the rich culinary traditions of Maharashtra and India. From crispy dosas and spicy pav bhaji to our comforting dal rice and paneer specials — every dish is made with love and served with care.</p>
+
+    <p>Our restaurant provides a clean, comfortable, and welcoming environment where families, travelers, and food lovers can come together to enjoy wholesome meals. We believe in good food, good service, and creating memories over meals.</p>
+
+    <p>Whether you're stopping by for breakfast, lunch, or dinner — <strong>Samruddhi Pure Veg</strong> promises a taste you'll return for.</p>
+  </div>
+</section>
+
+
+  <section id="contact" class="section">
+    <h2>Contact Information</h2>
+    <p>
+      📍 Jeur, Tal. Karmala, Dist. Solapur<br>
+      📞 +91 98765 43210<br>
+      🕒 7:00 AM – 10:00 PM
+    </p>
+  </section>
+
+  <footer>
+    Follow us: <a href="https://www.instagram.com/samrudhipureveg?igsh=MTg0djZkeTRmczdxcQ==" target="_blank">
+  <i class="bi bi-instagram" style=" color: #E1306C;"></i>
+</a>
+ <i class="bi bi-facebook"></i> <i class="bi bi-whatsapp"></i>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
